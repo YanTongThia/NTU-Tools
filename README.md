@@ -31,5 +31,6 @@ My final project went through multiple iterations as it did not live up to expec
 Another issue was memory. When the number of total combinations gets large, out-of-memory issues can occur when executing the program. This was due to the storage of a large number of unnecessary global variables. To combat this, iterators and generators are used instead to avoid having to access too much memory in order to be memory efficient.
 
 #### Change Logs:
-Jan 04 2023: Created NTU Tools @ https://github.com/ThiaYanTong/ThiaYanTong/tree/NTU-Tools
+Jan 04 2023: Created NTU Tools @ https://github.com/ThiaYanTong/ThiaYanTong/tree/NTU-Tools 
+
 Jun 18 2023: Refactored Code
