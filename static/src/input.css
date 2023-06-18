@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#select {
+    @apply w-24 border-2 border-black mx-auto;
+}
+
+#buttons {
+    @apply mx-auto flex place-items-center justify-center p-2 gap-x-2;
+}
+    
+#buttons > #minus_button {
+    @apply mx-auto border-2 border-black w-7 h-7 text-center font-bold;
+}
+
+#buttons > #add_button {
+    @apply mx-auto border-2 border-black w-7 h-7 text-center font-bold;
+}
+
+#inner_code {
+    @apply flex place-items-center gap-x-2;
+}
+
+table {
+    @apply text-center table-auto self-center min-w-full;
+}
+
+tr#header {
+    @apply bg-slate-400 text-white;
+}
+
+tr:not([id="header"]) > td {
+    @apply px-5 py-2 border-2 border-black;
+}
+
+tr#header > td {
+    @apply px-7 py-1 border-2 border-black;
+}

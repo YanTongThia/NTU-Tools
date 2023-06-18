@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTU Tools</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+    <script src="/static/js/main.js"></script>
+</head>
+<body class="min-h-screen min-w-[100vw-gap-5]">
+    <header class="bg-blue-500 text-white sticky w-screen top-0">
+        <section class="max-w-4xl mx-auto text-center  p-2 flex justify-between items-center">
+            <h1 class="text-3xl font-medium justify-between items-center inline-flex">
+                <img src="/static/img/favicon.ico">
+                &nbsp;
+                <a href="/">NTU Tools</a>
+            </h1>
+            <div>
+                <nav class="md:block space-x-8 text-xl font-medium" aria-label="main">
+                    <a href="" class="hover:opacity-90">Timetable</a>
+                    <a href="" class="hover:opacity-90">About</a>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="max-w-5xl border-2 border-black mx-auto text-center ">
+        <div class="grid grid-cols-10 gap-5 p-3 ">
+            <div id="table" class="col-span-7 flex justify-center">
+                <table class="">
+                    <tr id="header" class="">
+                        <td class="">Time / Day</td>
+                        <td class="">Mon</td>
+                        <td class="">Tue</td>
+                        <td class="">Wed</td>
+                        <td class="">Thu</td>
+                        <td class="">Fri</td>
+                        <td class="">Sat</td>
+                    </tr>
+                    <tr>
+                        <td class="" >0730 - 0830</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >0830 - 0930</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >0930 - 1030</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1030 - 1130</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1130 - 1230</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1230 - 1330</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1330 - 1430</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1430 - 1530</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1530 - 1630</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1630 - 1730</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1730 - 1830</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1830 - 1930</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >1930 - 2030</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    <tr>
+                        <td class="" >2030 - 2130</td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                        <td class="" ></td>
+                    </tr>
+                    
+                    
+                </table>
+            </div>
+            
+            <div class="col-span-3 w-full p-4 flex flex-col">
+                <div class="w-48 h-16 p-4 mx-auto text-center flex place-items-center border-2 border-black">
+                    <button onclick="decrement()" class="bg-slate-200 p-2 mx-auto text-center font-medium border-2 border-black">&lt;</button>
+                    <span id="start" class="mx-auto text-center font-medium">0</span>
+                    <span class="mx-auto text-center font-medium">/</span>
+                    <span id="end" class="mx-auto text-center font-medium">0</span>
+                    <button onclick="increment()"class="bg-slate-200 p-2 mx-auto text-center font-medium border-2 border-black">&gt;</button>
+                </div>
+
+                <!-- <div class="w-56 h-16 mx-auto mt-4 flex flex-col place-items-center">
+                    
+                    <div class="my-auto">
+                        <input type="checkbox" name="2 Day Week" id="check1">
+                        <label for="2 Day Week">2 Day Week</label>
+                    </div>
+                    <div class="my-auto">
+                        <input type="checkbox" name="3 Day Week" id="check2">
+                        <label for="3 Day Week">3 Day Week</label>
+                    </div>
+                    
+                    
+                </div> -->
+                <!-- Make this selection mutually exclusive -->
+
+                <div class="p-5 w-56 mx-auto mt-4 gap-x-2 flex flex-col place-items-center justify-center" id="code">
+                    <div id="inner_code">
+                        <Select id="select">
+                            <option disabled selected value="Code">Code</option>
+                            {% for code in list_code %}
+                            <option value="{{code}}">{{code}}</option>
+                            {% endfor %}
+                        </Select>
+                        <div id="buttons">
+                            <Button id="minus_button">-</Button>
+                            <Button id="add_button">+</Button>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <button onclick="inputverification()" class="border-2 border-black p-2 mx-auto mt-4 h-10 w-28">Submit</button>
+
+                <div id="error" class="w-56 mx-auto mt-4 hidden">
+                    <span class="text-red-600 font-bold">Error!</span><br>
+                    <span class="text-red-600">Incorrect code(s) selected.</span><br>
+                    <span class="text-red-600">Only unique codes are allowed.</span>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
